@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Camera — Capturing Africa's Stories</title>
+    <meta name="description" content="Professional news website covering Politics, Economy, Business, Technology, Sports, Entertainment, Culture, and Health across Africa.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <base target="_blank">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ============================================
+         BREAKING NEWS TICKER
+         ============================================ -->
+    <div class="breaking-bar">
+        <div class="breaking-inner">
+            <span class="breaking-label">Breaking</span>
+            <span>ECOWAS Summit Ends with Historic Trade Agreement &bull; Senegal Qualifies for 2026 World Cup &bull; Burna Boy Wins BET Award &bull; Kenya's Economy Grows 6.2%</span>
+        </div>
+    </div>
+
+    <!-- ============================================
+         HEADER / NAVIGATION
+         ============================================ -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <!-- Logo -->
+            <a href="#" class="logo" aria-label="African Camera Home">
+                <div class="logo-icon">📷</div>
+                <div>
+                    <div class="logo-text">African <span>Camera</span></div>
+                </div>
+                <span class="tagline">Capturing Africa's Stories</span>
+            </a>
+
+            <!-- Hamburger Menu Toggle (CSS Checkbox Hack) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="hamburger" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#politics">Politics</a></li>
+                    <li><a href="#economy">Economy</a></li>
+                    <li><a href="#sports">Sports</a></li>
+                    <li><a href="#entertainment">Entertainment</a></li>
+                    <li><a href="#culture">Culture</a></li>
+                    <li><a href="#technology">Tech</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Right: Search + Dark Mode -->
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="search" placeholder="Search news..." aria-label="Search news">
+                    <button type="submit" aria-label="Search">🔍</button>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         HERO SECTION — FEATURED STORY
+         ============================================ -->
+    <section class="hero" id="main-content">
+        <div class="container">
+            <article class="hero-card">
+                <img 
+                    src="./gallary/Ecowa.PNG" 
+                    alt="ECOWAS leaders at summit meeting" 
+                    class="hero-image"
+                    loading="eager"
+                >
+                <div class="hero-content">
+                    <div class="hero-category">
+                        <span class="category-tag politics">Politics</span>
+                    </div>
+                    <h1 class="hero-title">
+                        ECOWAS Summit Ends with Historic Trade Agreement Among West African Nations
+                    </h1>
+                    <p class="hero-excerpt">
+                        Leaders from 15 member states signed a landmark protocol aimed at boosting intra-African trade by 40% within the next five years. The agreement establishes a unified customs framework and eliminates 90% of tariffs on goods traded within the bloc.
+                    </p>
+                    <div class="hero-meta">
+                        <span>👤 Adewale Johnson</span>
+                        <span>📅 July 17, 2026</span>
+                        <span>⏱️ 8 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">Read Full Story</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============================================
+         MAIN LAYOUT: CONTENT + SIDEBAR
+         ============================================ -->
+    <div class="main-layout container">
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+
+            <!-- Latest News Section -->
+            <section class="latest-news" aria-labelledby="latest-heading">
+                <h2 id="latest-heading" class="section-title">Latest News</h2>
+
+                <div class="news-grid">
+
+                    <!-- Card 1: Politics -->
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/Nigeria Government.PNG" alt="Nigeria government building" class="card-image" loading="lazy">
+                            <span class="category-tag politics card-category">Politics</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Nigeria's President Announces Major Anti-Corruption Drive</a></h3>
+                            <p class="card-excerpt">A sweeping new initiative targets financial crimes across all government sectors, with special courts established to fast-track prosecution of high-profile cases.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Chinedu Okonkwo</span>
+                                <span class="card-date-time">📅 Jul 17 &bull; 6 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Economy -->
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/economy.PNG" alt="Nairobi skyline with tech hub" class="card-image" loading="lazy">
+                            <span class="category-tag economy card-category">Economy</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Kenya's Economy Grows 6.2% as Tech Sector Booms</a></h3>
+                            <p class="card-excerpt">Silicon Savannah continues its impressive trajectory with fintech startups attracting record foreign investment and creating thousands of new jobs.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Grace Mwangi</span>
+                                <span class="card-date-time">📅 Jul 17 &bull; 5 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Sports -->
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/senegal.PNG" alt="Senegal football team celebrating" class="card-image" loading="lazy">
+                            <span class="category-tag sports card-category">Sports</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Senegal Qualifies for 2026 World Cup with Thrilling Victory</a></h3>
+                            <p class="card-excerpt">The Lions of Teranga secured their spot in North America with a dramatic 2-1 win in Dakar, sparking nationwide celebrations across the country.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Moussa Diallo</span>
+                                <span class="card-date-time">📅 Jul 16 &bull; 4 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Entertainment -->
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/music-performance.PNG" alt="Musician performing on stage" class="card-image" loading="lazy">
+                            <span class="category-tag entertainment card-category">Entertainment</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Burna Boy Wins Best International Artist at BET Awards</a></h3>
+                            <p class="card-excerpt">The Nigerian superstar took home the prestigious award for the third time, dedicating the win to "every African dreamer pushing boundaries."</p>
+                            <div class="card-meta">
+                                <span class="card-author">Amina Bello</span>
+                                <span class="card-date-time">📅 Jul 16 &bull; 3 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: Culture -->
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/bronze-artifact.PNG" alt="Benin Bronze artifact" class="card-image" loading="lazy">
+                            <span class="category-tag culture card-category">Culture</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Ancient Benin Bronzes Return Home: Historic Moment for Nigeria</a></h3>
+                            <p class="card-excerpt">After more than a century in European museums, hundreds of priceless artifacts have been repatriated to the Edo Museum of West African Art.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Fatima Diallo</span>
+                                <span class="card-date-time">📅 Jul 15 &bull; 7 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6: Technology -->
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/digital-technology.PNG" alt="Digital technology in Rwanda" class="card-image" loading="lazy">
+                            <span class="category-tag technology card-category">Technology</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Rwanda Launches Africa's Most Advanced Digital ID System</a></h3>
+                            <p class="card-excerpt">The new biometric-enabled national ID integrates health records, voting credentials, and financial services into a single secure platform.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Jean-Pierre Ndayisaba</span>
+                                <span class="card-date-time">📅 Jul 15 &bull; 5 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 7: Health -->
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/health.PNG" alt="Healthcare workers in Ghana" class="card-image" loading="lazy">
+                            <span class="category-tag health card-category">Health</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">WHO Praises Ghana's Malaria Vaccine Rollout Success</a></h3>
+                            <p class="card-excerpt">Ghana has vaccinated over 1.2 million children in its first year, showing a 35% reduction in severe malaria cases in target regions.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Dr. Abena Owusu</span>
+                                <span class="card-date-time">📅 Jul 14 &bull; 4 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 8: Environment -->
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/congo-basin.PNG" alt="Congo Basin rainforest" class="card-image" loading="lazy">
+                            <span class="category-tag environment card-category">Environment</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Congo Basin Nations Commit to Protecting 30% of Rainforest by 2030</a></h3>
+                            <p class="card-excerpt">Ten Central African countries signed the Brazzaville Declaration, pledging coordinated conservation efforts for the world's second-largest rainforest.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Kofi Asante</span>
+                                <span class="card-date-time">📅 Jul 14 &bull; 6 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 9: Sports - World Cup -->
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/Fifa-world-cup.PNG" alt="2026 FIFA World Cup stadium" class="card-image" loading="lazy">
+                            <span class="category-tag sports card-category">Sports</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">2026 World Cup: Morocco and Tunisia Join Senegal in Qualification</a></h3>
+                            <p class="card-excerpt">North African powerhouses secure their tickets to the expanded 48-team tournament, bringing Africa's confirmed representatives to three with more to come.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Youssef El Amrani</span>
+                                <span class="card-date-time">📅 Jul 13 &bull; 5 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 10: Business -->
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/economy.PNG" alt="African business district" class="card-image" loading="lazy">
+                            <span class="category-tag business card-category">Business</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">African Union Launches Continental Free Trade Portal</a></h3>
+                            <p class="card-excerpt">The digital platform aims to connect 1.3 billion consumers across 54 countries, simplifying cross-border commerce for SMEs and entrepreneurs.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Nadia Hassan</span>
+                                <span class="card-date-time">📅 Jul 13 &bull; 6 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Politics Section -->
+            <section class="category-section" id="politics" aria-labelledby="politics-heading">
+                <h2 id="politics-heading" class="section-title">🗳️ Politics</h2>
+                <div class="category-grid">
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/Fifa-world-cup.PNG" alt="African Union headquarters" class="card-image" loading="lazy">
+                            <span class="category-tag politics card-category">Politics</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">African Union Elects New Chairperson for 2026-2027 Term</a></h3>
+                            <p class="card-excerpt">The incoming chairperson pledges to prioritize peace and security while accelerating the implementation of Agenda 2063.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Adewale Johnson</span>
+                                <span class="card-date-time">📅 Jul 12 &bull; 5 min</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/African Union Elects.PNG" alt="Election officials counting votes" class="card-image" loading="lazy">
+                            <span class="category-tag politics card-category">Politics</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Ghana Prepares for Historic December Elections</a></h3>
+                            <p class="card-excerpt">Over 18 million registered voters will cast ballots in what analysts call the most competitive presidential race in the nation's history.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Kwame Asante</span>
+                                <span class="card-date-time">📅 Jul 11 &bull; 7 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Economy Section -->
+            <section class="category-section" id="economy" aria-labelledby="economy-heading">
+                <h2 id="economy-heading" class="section-title">📈 Economy</h2>
+                <div class="category-grid">
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/stock chart.PNG" alt="Stock market trading floor" class="card-image" loading="lazy">
+                            <span class="category-tag economy card-category">Economy</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Nigerian Stock Exchange Hits All-Time High</a></h3>
+                            <p class="card-excerpt">The NGX All-Share Index crossed the 100,000-point mark for the first time, driven by banking and telecom sector gains.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Ngozi Eze</span>
+                                <span class="card-date-time">📅 Jul 12 &bull; 4 min</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/Ethopian coffee.PNG" alt="Ethiopian coffee exports" class="card-image" loading="lazy">
+                            <span class="category-tag economy card-category">Economy</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Ethiopia's Coffee Exports Surge to Record $1.4 Billion</a></h3>
+                            <p class="card-excerpt">Favorable global prices and improved processing infrastructure have positioned Ethiopia as the world's fastest-growing coffee exporter.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Tigist Bekele</span>
+                                <span class="card-date-time">📅 Jul 11 &bull; 5 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Sports Section -->
+            <section class="category-section" id="sports" aria-labelledby="sports-heading">
+                <h2 id="sports-heading" class="section-title">⚽ Sports</h2>
+                <div class="category-grid">
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/athletics.PNG" alt="Athletics stadium" class="card-image" loading="lazy">
+                            <span class="category-tag sports card-category">Sports</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">South Africa to Host 2027 Women's World Cup</a></h3>
+                            <p class="card-excerpt">FIFA confirmed South Africa as the host nation, marking the first time the tournament will be held on African soil.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Thabo Molefe</span>
+                                <span class="card-date-time">📅 Jul 10 &bull; 4 min</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="card-image-wrap">
+                            <img src="./gallary/basketball.PNG" alt="Basketball court" class="card-image" loading="lazy">
+                            <span class="category-tag sports card-category">Sports</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">NBA Africa League Expands to 16 Teams for 2027 Season</a></h3>
+                            <p class="card-excerpt">The Basketball Africa League announces expansion into North and Central Africa with four new franchise locations.</p>
+                            <div class="card-meta">
+                                <span class="card-author">Amara Conteh</span>
+                                <span class="card-date-time">📅 Jul 9 &bull; 5 min</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ============================================
+             SIDEBAR (Hidden on Mobile)
+             ============================================ -->
+        <aside class="sidebar" aria-label="Sidebar">
+
+            <!-- Trending Stories -->
+            <div class="trending-widget">
+                <h3 class="widget-title">🔥 Trending Now</h3>
+                <ol class="trending-list">
+                    <li class="trending-item">
+                        <span class="trending-number">1</span>
+                        <div class="trending-content">
+                            <h4><a href="#">ECOWAS Trade Agreement Shakes Up Regional Markets</a></h4>
+                            <span class="trending-meta">2.4k shares &bull; 4h ago</span>
+                        </div>
+                    </li>
+                    <li class="trending-item">
+                        <span class="trending-number">2</span>
+                        <div class="trending-content">
+                            <h4><a href="#">Senegal's World Cup Victory: A Nation Celebrates</a></h4>
+                            <span class="trending-meta">1.8k shares &bull; 6h ago</span>
+                        </div>
+                    </li>
+                    <li class="trending-item">
+                        <span class="trending-number">3</span>
+                        <div class="trending-content">
+                            <h4><a href="#">Burna Boy's BET Win: Third Time's the Charm</a></h4>
+                            <span class="trending-meta">1.5k shares &bull; 8h ago</span>
+                        </div>
+                    </li>
+                    <li class="trending-item">
+                        <span class="trending-number">4</span>
+                        <div class="trending-content">
+                            <h4><a href="#">Benin Bronzes Return: A Century-Long Wait Ends</a></h4>
+                            <span class="trending-meta">1.2k shares &bull; 12h ago</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Popular Stories -->
+            <div class="popular-widget">
+                <h3 class="widget-title">📰 Most Read</h3>
+                <div class="popular-list">
+                    <article class="popular-item">
+                        <img src="./gallary/Ecowa.PNG" alt="ECOWAS Summit" class="popular-thumb" loading="lazy">
+                        <div class="popular-content">
+                            <h4><a href="#">ECOWAS Summit Ends with Historic Trade Agreement</a></h4>
+                            <span class="popular-views">👁️ 45,230 views</span>
+                        </div>
+                    </article>
+                    <article class="popular-item">
+                        <img src="" alt="Kenya economy" class="popular-thumb" loading="lazy">
+                        <div class="popular-content">
+                            <h4><a href="#">Kenya's Economy Grows 6.2% as Tech Sector Booms</a></h4>
+                            <span class="popular-views">👁️ 38,100 views</span>
+                        </div>
+                    </article>
+                    <article class="popular-item">
+                        <img src="./gallary/African tech.PNG" alt="Rwanda digital" class="popular-thumb" loading="lazy">
+                        <div class="popular-content">
+                            <h4><a href="#">Rwanda Launches Africa's Most Advanced Digital ID System</a></h4>
+                            <span class="popular-views">👁️ 32,450 views</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-widget">
+                <h3 class="widget-title">📧 Newsletter</h3>
+                <p>Get the latest African news delivered to your inbox every morning. No spam, just stories that matter.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <input type="text" placeholder="Your name" required aria-label="Your name">
+                    <input type="email" placeholder="Your email address" required aria-label="Your email address">
+                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                </form>
+                <p class="newsletter-privacy">By subscribing, you agree to our Privacy Policy. Unsubscribe anytime.</p>
+            </div>
+
+        </aside>
+    </div>
+
+    <!-- ============================================
+         MORE STORIES SECTION
+         ============================================ -->
+    <section class="more-stories container" aria-labelledby="more-heading">
+        <h2 id="more-heading" class="section-title">More Stories</h2>
+        <div class="more-stories-grid">
+
+            <article class="news-card">
+                <div class="card-image-wrap">
+                    <img src="./gallary/African tech.PNG" alt="African tech startup office" class="card-image" loading="lazy">
+                    <span class="category-tag technology card-category">Technology</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title"><a href="#">Nigerian Fintech Startup Raises $50M in Series B Funding</a></h3>
+                    <p class="card-excerpt">The Lagos-based payment platform plans to expand operations into five new African markets by early 2027.</p>
+                    <div class="card-meta">
+                        <span class="card-author">Oluwaseun Adeyemi</span>
+                        <span class="card-date-time">📅 Jul 12 &bull; 4 min</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="card-image-wrap">
+                    <img src="./gallary/African film premiere.PNG" alt="African film premiere" class="card-image" loading="lazy">
+                    <span class="category-tag entertainment card-category">Entertainment</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title"><a href="#">Nollywood Film Breaks Box Office Records Across Africa</a></h3>
+                    <p class="card-excerpt">The epic historical drama has grossed over $15 million, becoming the highest-grossing African film of all time.</p>
+                    <div class="card-meta">
+                        <span class="card-author">Chioma Okafor</span>
+                        <span class="card-date-time">📅 Jul 11 &bull; 3 min</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="card-image-wrap">
+                    <img src="./gallary/african Cultural Festival.PNG" alt="African cultural festival" class="card-image" loading="lazy">
+                    <span class="category-tag culture card-category">Culture</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title"><a href="#">Pan-African Cultural Festival Returns to Dakar After 5 Years</a></h3>
+                    <p class="card-excerpt">Over 200 artists from 40 countries will gather for the continent's largest celebration of music, art, and heritage.</p>
+                    <div class="card-meta">
+                        <span class="card-author">Aïssatou Diop</span>
+                        <span class="card-date-time">📅 Jul 10 &bull; 5 min</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- About Column -->
+                <div class="footer-col footer-about">
+                    <h3>African Camera</h3>
+                    <p>Capturing Africa's Stories since 2018. We are an independent digital news platform dedicated to telling the stories that shape our continent — from breaking news to in-depth analysis.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Categories Column -->
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Economy</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </div>
+
+                <!-- More Column -->
+                <div class="footer-col">
+                    <h3>More</h3>
+                    <ul>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Culture</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Environment</a></li>
+                        <li><a href="#">Opinion</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 African Camera. All rights reserved. Capturing Africa's Stories, one headline at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         DARK MODE TOGGLE SCRIPT (Vanilla JS)
+         ============================================ -->
+    <script>
+        (function() {
+            const toggle = document.getElementById('theme-toggle');
+            const html = document.documentElement;
+
+            // Check for saved preference
+            const savedTheme = localStorage.getItem('african-camera-theme');
+            if (savedTheme === 'dark') {
+                html.setAttribute('data-theme', 'dark');
+                toggle.textContent = '☀️';
+            }
+
+            toggle.addEventListener('click', function() {
+                const isDark = html.getAttribute('data-theme') === 'dark';
+                if (isDark) {
+                    html.removeAttribute('data-theme');
+                    localStorage.setItem('african-camera-theme', 'light');
+                    toggle.textContent = '🌙';
+                } else {
+                    html.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('african-camera-theme', 'dark');
+                    toggle.textContent = '☀️';
+                }
+            });
+        })();
+    </script>
+
+</body>
+</html>
