@@ -509,8 +509,7 @@
 
     .card-image-wrap {
         position: relative;
-        overflow: hidden;
-        height: 180px;
+        overflow: hidden; 
     }
 
     .card-image {
